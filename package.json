@@ -1,0 +1,46 @@
+{
+  "name": "astro-starter-ts",
+  "description": "A skeleton Astro app to quickly get started.",
+  "version": "0.1.0",
+  "author": "HAUS",
+  "engines": {
+    "node": "^20"
+  },
+  "type": "module",
+  "scripts": {
+    "preinstall": "node scripts/check-node-version.mjs",
+    "dev": "astro dev",
+    "build": "astro check && astro build",
+    "build:dev": "astro check && rm -rf dist && astro build",
+    "preview": "astro preview --host",
+    "start": "astro preview",
+    "astro": "astro",
+    "clean": "node scripts/clean.mjs",
+    "scaffold": "node scripts/scaffold.mjs",
+    "prettier": "prettier -c .",
+    "prettier-fix": "prettier -w .",
+    "stylelint": "stylelint \"**/*.scss\"",
+    "stylelint-fix": "stylelint --fix \"**/*.scss\""
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.5.5",
+    "@astrojs/sitemap": "^3.1.1",
+    "@madeinhaus/utils": "^1.1.3",
+    "astro": "^4.4.3",
+    "astro-vtbot": "^1.5.0",
+    "sass": "^1.71.1",
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "@madeinhaus/prettier-config": "^1.2.1",
+    "chalk": "^5.3.0",
+    "figlet": "^1.7.0",
+    "inquirer": "^9.2.15",
+    "prettier": "^3.2.5",
+    "prettier-plugin-astro": "^0.13.0",
+    "shelljs": "^0.8.5",
+    "stylelint": "^16.2.1",
+    "stylelint-config-standard-scss": "^13.0.0",
+    "stylelint-css-modules": "^1.2.2"
+  }
+}

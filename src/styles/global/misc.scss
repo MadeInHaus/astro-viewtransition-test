@@ -1,0 +1,11 @@
+@import '@/styles/breakpoints';
+
+:root {
+    --header-height: 60px;
+}
+
+@include large {
+    :root {
+        --header-height: 80px;
+    }
+}
